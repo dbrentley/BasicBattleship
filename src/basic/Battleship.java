@@ -47,7 +47,7 @@ public class Battleship {
         row--; // Compensate for 0 based index
         if (col >= 0 && col < COLS && row < ROWS && row >= 0) {
             if (isVertical) {
-                if (row + size > 10) {
+                if (row + size > ROWS) {
                     // make sure it doesn't go off the bottom of the board
                     return false;
                 }
